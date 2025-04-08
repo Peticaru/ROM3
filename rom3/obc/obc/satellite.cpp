@@ -128,9 +128,7 @@ void satellite::restart_3mins(void)
   watchdog::set_time_period(_3_MINUTES);
   satellite::enter_sleep_mode();
 
-  while (1)
-  {
-  }
+ 
 }
 
 /**
