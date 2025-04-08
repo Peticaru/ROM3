@@ -63,9 +63,7 @@ void preinitialize_eeprom_params(void)
     Serial.println("Reflash firmware with SATELLITE_RESET_ANTENNA_STATUS 0.");
   }
 
-  while (1)
-  {
-  }
+
 #endif
 }
 
@@ -113,9 +111,8 @@ void satellite::restart(void)
   watchdog::set_time_period(_1_SECOND);
   satellite::enter_sleep_mode();
 
-  while (1)
-  {
-  }
+ for(;;){
+ }
 }
 
 /**
@@ -128,9 +125,7 @@ void satellite::restart_3mins(void)
   watchdog::set_time_period(_3_MINUTES);
   satellite::enter_sleep_mode();
 
-  while (1)
-  {
-  }
+ 
 }
 
 /**
